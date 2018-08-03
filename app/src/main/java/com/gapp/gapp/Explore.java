@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,6 +48,7 @@ public class Explore extends Fragment implements View.OnClickListener{
     ArrayList<ChildI> childIS;
     RecyclerView list;
     TextView title;
+    HorizontalScrollView hsv;
     Button bar, bakery, mealdelivery, mealtakeaway, cafe, museum, nightclub, restaurant, spa;
     MyAdapter myAdapter;
     String lati = "", lngi = "";
@@ -61,6 +63,8 @@ public class Explore extends Fragment implements View.OnClickListener{
 
         list = view.findViewById(R.id.e_list);
         parentIS = new ArrayList<>();
+
+        hsv = view.findViewById(R.id.e_hl);
 
         bar = view.findViewById(R.id.e_bar);
         bakery = view.findViewById(R.id.e_bakery);
@@ -219,6 +223,7 @@ public class Explore extends Fragment implements View.OnClickListener{
                     lati = String.valueOf(location.getLatitude());
                     lngi = String.valueOf(location.getLongitude());
                     Toast.makeText(getActivity(), "Your location is been captured", Toast.LENGTH_LONG).show();
+                    hsv.setVisibility(View.VISIBLE);
                 } else {
                     Toast.makeText(getActivity(), "Could not find your location", Toast.LENGTH_LONG).show();
                 }
