@@ -85,7 +85,7 @@ public class Explore extends Fragment implements View.OnClickListener{
                 getLocation();
             }
         });
-
+//
         bar.setOnClickListener(this);
         bakery.setOnClickListener(this);
         mealdelivery.setOnClickListener(this);
