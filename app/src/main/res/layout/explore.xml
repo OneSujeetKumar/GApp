@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Explore">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/e_location"
+        android:layout_margin="@dimen/d10"
+        android:background="@drawable/rc_lgrey"
+        android:text="@string/findmyloc"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/e_title"
+        android:background="@color/lgrey"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/d5"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/d10"
+        android:layout_below="@id/e_location"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/e_title"
+        android:layout_above="@id/etabs"
+        android:id="@+id/e_list"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/d10"
+        android:id="@+id/etabs">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rc_lgrey"
+                android:id="@+id/e_bar"
+                style="?android:attr/buttonBarButtonStyle"
+                android:paddingStart="@dimen/d10"
+                android:paddingEnd="@dimen/d10"
+                android:text="@string/bar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="@drawable/rc_lgrey"
+                android:paddingStart="@dimen/d10"
+                android:paddingEnd="@dimen/d10"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_marginEnd="@dimen/d10"
+                android:id="@+id/e_bakery"
+                android:text="@string/bakery"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="@drawable/rc_lgrey"
+                android:paddingStart="@dimen/d10"
+                android:paddingEnd="@dimen/d10"
+                android:id="@+id/e_mealdelivery"
+                android:text="@string/mealdelivery"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/e_mealtakeaway"
+                style="?android:attr/buttonBarButtonStyle"
+                android:paddingStart="@dimen/d10"
+                android:paddingEnd="@dimen/d10"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_marginEnd="@dimen/d10"
+                android:background="@drawable/rc_lgrey"
+                android:text="@string/mealtakeaway"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="@drawable/rc_lgrey"
+                android:paddingStart="@dimen/d10"
+                android:paddingEnd="@dimen/d10"
+                android:id="@+id/e_cafe"
+                android:text="@string/cafe"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="@drawable/rc_lgrey"
+                android:paddingStart="@dimen/d10"
+                android:paddingEnd="@dimen/d10"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_marginEnd="@dimen/d10"
+                android:id="@+id/e_museum"
+                android:text="@string/museum"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="@drawable/rc_lgrey"
+                android:paddingStart="@dimen/d10"
+                android:paddingEnd="@dimen/d10"
+                android:id="@+id/e_nightclub"
+                android:text="@string/nightclub"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="@drawable/rc_lgrey"
+                android:paddingStart="@dimen/d10"
+                android:paddingEnd="@dimen/d10"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_marginEnd="@dimen/d10"
+                android:id="@+id/e_restaurant"
+                android:text="@string/restaurant"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="@drawable/rc_lgrey"
+                android:paddingStart="@dimen/d10"
+                android:paddingEnd="@dimen/d10"
+                android:id="@+id/e_spa"
+                android:text="@string/spa"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

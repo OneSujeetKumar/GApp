@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mgrey">#99212f3d</color>
+    <color name="ddgrey">#10171e</color>
+    <color name="dgrey">#212f3d</color>
+    <color name="trans">#00FFFFFF</color>
+    <color name="lgrey">#D3D3D3</color>
+</resources>

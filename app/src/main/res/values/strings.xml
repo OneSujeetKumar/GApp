@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GApp</string>
+    <string name="bar">Bar</string>
+    <string name="bakery">Bakery</string>
+    <string name="mealdelivery">Meal Delivery</string>
+    <string name="mealtakeaway">Meal Takeaway</string>
+    <string name="cafe">Cafe</string>
+    <string name="museum">Museum</string>
+    <string name="nightclub">Night Club</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="spa">Spa</string>
+    <string name="searchres">Search Restaurant</string>
+    <string name="loc_key">AIzaSyDhTgx95ZqpV_Sq0Nr6H7s58R4bzH2pwik</string>
+    <string name="findmyloc">Get My Location</string>
+    <string name="country">Place</string>
+    <string name="categories">Categories</string>
+
+</resources>
