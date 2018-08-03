@@ -64,7 +64,7 @@ public class Explore extends Fragment implements View.OnClickListener{
         list = view.findViewById(R.id.e_list);
         parentIS = new ArrayList<>();
 
-        hsv = view.findViewById(R.id.e_hl);
+        hsv = view.findViewById(R.id.e_hsv);
 
         bar = view.findViewById(R.id.e_bar);
         bakery = view.findViewById(R.id.e_bakery);
