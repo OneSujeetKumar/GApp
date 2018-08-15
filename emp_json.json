@@ -1,0 +1,25 @@
+{
+"Employees" : [
+{
+"name":"Sujeet",
+"designation":"Developer",
+"gender":"Male",
+"photo":"https://picsum.photos/200/300/?image=898",
+"age":"26"
+},
+{
+"name":"Ron",
+"designation":"Sales",
+"gender":"Male",
+"photo":"https://picsum.photos/200/300/?image=898",
+"age":"29"
+},
+{
+"name":"June",
+"designation":"Marketing",
+"gender":"Female",
+"photo":"https://picsum.photos/200/300/?image=898",
+"age":"35"
+}
+]
+}
