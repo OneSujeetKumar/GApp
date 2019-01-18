@@ -107,52 +107,48 @@ public class Explore extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.e_bar:
-                title.setText(getResources().getString(R.string.bar));
-                SearchNearBy(IamSingle.nearByLoc(lati, lngi, "bar"));
+                setandSearch(getResources().getString(R.string.bar), "bar");
                 break;
 
             case R.id.e_bakery:
-                title.setText(getResources().getString(R.string.bakery));
-                SearchNearBy(IamSingle.nearByLoc(lati, lngi, "bakery"));
+                setandSearch(getResources().getString(R.string.bakery), "bakery");
                 break;
 
             case R.id.e_mealdelivery:
-                title.setText(getResources().getString(R.string.mealdelivery));
-                SearchNearBy(IamSingle.nearByLoc(lati, lngi, "meal_delivery"));
+                setandSearch(getResources().getString(R.string.mealdelivery), "meal_delivery");
                 break;
 
             case R.id.e_mealtakeaway:
-                title.setText(getResources().getString(R.string.mealtakeaway));
-                SearchNearBy(IamSingle.nearByLoc(lati, lngi, "meal_takeaway"));
+                setandSearch(getResources().getString(R.string.mealtakeaway), "meal_takeaway");
                 break;
 
             case R.id.e_cafe:
-                title.setText(getResources().getString(R.string.cafe));
-                SearchNearBy(IamSingle.nearByLoc(lati, lngi, "cafe"));
+                setandSearch(getResources().getString(R.string.cafe), "cafe");
                 break;
 
             case R.id.e_museum:
-                title.setText(getResources().getString(R.string.museum));
-                SearchNearBy(IamSingle.nearByLoc(lati, lngi, "museum"));
+                setandSearch(getResources().getString(R.string.museum), "museum");
                 break;
 
             case R.id.e_nightclub:
-                title.setText(getResources().getString(R.string.nightclub));
-                SearchNearBy(IamSingle.nearByLoc(lati, lngi, "night_club"));
+                setandSearch(getResources().getString(R.string.nightclub), "night_club");
                 break;
 
             case R.id.e_restaurant:
-                title.setText(getResources().getString(R.string.restaurant));
-                SearchNearBy(IamSingle.nearByLoc(lati, lngi, "restaurant"));
+                setandSearch(getResources().getString(R.string.restaurant), "restaurant");
                 break;
 
             case R.id.e_spa:
-                title.setText(getResources().getString(R.string.spa));
-                SearchNearBy(IamSingle.nearByLoc(lati, lngi, "spa"));
+                setandSearch(getResources().getString(R.string.spa), "spa");
                 break;
         }
     }
-
+    
+    void setandSearch(String title, String query){
+        title.setText(title);
+        SearchNearBy(IamSingle.nearByLoc(lati, lngi, query));
+    }
+       
     void SearchNearBy(String url){
         parentIS.clear();
         title.setVisibility(View.VISIBLE);
